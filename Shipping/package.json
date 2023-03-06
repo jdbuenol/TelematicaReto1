@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@grpc/grpc-js": "^1.8.11",
+    "@grpc/proto-loader": "^0.7.5",
+    "async": "^3.2.4",
+    "dotenv": "^16.0.3"
+  }
+}

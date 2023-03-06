@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package Inventory;
+
+// The Inventory service definition.
+service Inventory {
+    // Creates an item to the Inventory
+    rpc CreateItem (ItemId) returns (Reply) {}
+    // Delete an item from the cart
+    rpc DeleteItem (ItemId) returns (Reply) {}
+    // Checks the current state of a cart
+    rpc AddQuantity (Item) returns (Reply) {}
+    // Creates a new Cart
+    rpc RemoveQuantity (Item) returns (Reply) {}
+    // Checks the quantity of a single item
+    rpc CheckQuantity (ItemId) returns (Quantity) {}
+    // Checks the inventory
+    rpc CheckInventory (Empty) returns (stream Item) {}
+    // Mass Remove from Inventory
+    rpc MassRemove (stream Item) returns (Reply) {}
+}
+
+// Contains an item and it's quantity in the inventory
+message Item {
+    int32 itemId = 1;
+    int32 quantity = 2;
+}
+
+// Quantity of an item
+message Quantity {
+    int32 quantity = 1;
+}
+
+// ItemID to query
+message ItemId {
+    int32 itemId = 1;
+}
+
+// Empty parameter
+message Empty {}
+
+// The response message containing the result of the operation and a message
+message Reply {
+    bool success = 1;
+    string msg = 2;
+}

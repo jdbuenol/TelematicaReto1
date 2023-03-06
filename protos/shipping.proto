@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package Shipping;
+
+// The Shipping service definition.
+service Shipping {
+    // Creates a shipping address
+    rpc CreateAddress (AddressRequest) returns (Reply) {}
+    // Deletes a shipping address
+    rpc DeleteAddress (AddressId) returns (Reply) {}
+    // ChecksOut a ShopCart, removes the quantities from the storage and ships them to an address
+    rpc CheckOut (CheckOutRequest) returns (Reply) {}
+}
+
+// The address request contains the AddressId to be created and a string with the address info
+message AddressRequest {
+    int32 addressId = 1;
+    string addressInfo = 2;
+}
+
+// Contains a ShopCartId and an AdressId, the shopcart's content will be shipped to the address
+message CheckOutRequest {
+    int32 cartId = 1;
+    int32 addressId = 2;
+}
+
+// Contains an AdressId
+message AddressId {
+    int32 addressId = 1;
+}
+
+// The response message containing the result of the operation and a message
+message Reply {
+    bool success = 1;
+    string msg = 2;
+  }

@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package ShopCart;
+
+// The ShopCart service definition.
+service ShopCart {
+  // Adds an item to the cart
+  rpc AddToCart (ShopCartRequest) returns (Reply) {}
+  // Removes an item from the cart
+  rpc RemoveFromCart (ShopCartRequest) returns (Reply) {}
+  // Checks the current state of a cart
+  rpc CheckCart (CartId) returns (stream Item) {}
+  // Creates a new Cart
+  rpc CreateCart (CartId) returns (Reply) {}
+  // Deletes an existing Cart
+  rpc DeleteCart (CartId) returns (Reply) {}
+}
+
+// Contains an item and it's quantity in the selected Cart
+message Item {
+  int32 itemId = 1;
+  int32 quantity = 2;
+}
+
+// Contains the Id of the selected cart.
+message CartId {
+  int32 cartId = 1;
+}
+
+// The request message containing the cart's id, the item id and the quantity to add ot remove
+message ShopCartRequest {
+  int32 cartId  = 1;
+  int32 itemId = 2;
+  int32 quantity = 3;
+}
+
+// The response message containing the result of the operation and a message
+message Reply {
+  bool success = 1;
+  string msg = 2;
+}
