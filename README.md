@@ -75,7 +75,7 @@ Proceso de instalación y despliegue:
 - Se compilan los protos de ShopCart `grpc_tools_ruby_protoc -I ../protos --ruby_out=./lib --grpc_out=./lib ../protos/shopcart.proto`
 - Se compilan los protos de Inventory `grpc_tools_ruby_protoc -I ../protos --ruby_out=./lib --grpc_out=./lib ../protos/inventory.proto`
 - Se edita el archivo .env cambiando la variable port por el puerto en que se desplegara el microservicio ShopCart y la variable inventory_port con la ip y puerto del microservicio Inventory
-- Se despliega el servicio `ruby main.js`
+- Se despliega el servicio `ruby main.ru`
 
 ### Inventory microservice
 
@@ -93,7 +93,7 @@ Proceso de instalación y despliegue:
 - Se crea la carpeta de librerias `mkdir lib`
 - Se compilan los protos de Inventory `grpc_tools_ruby_protoc -I ../protos --ruby_out=./lib --grpc_out=./lib ../protos/inventory.proto`
 - Se edita el archivo .env cambiando la variable port por el puerto en que se desplegara el microservicio Inventory
-- Se despliega el servicio `ruby main.js`
+- Se despliega el servicio `ruby main.ru`
 
 ### Shipping microservice
 
@@ -127,3 +127,94 @@ Proceso de instalación y despliegue:
 
 ## Guía de uso
 
+El ApiGW consiste de 15 endpoints. en esta guia se pusieron a correr los tres microservicios y el ApiGW en la misma maquina, el ApiGW esta corriendo en el puerto 50054.
+
+### Crear un item en el inventario con ID 1 (los items se crean con cantidad 0)
+
+![]()
+
+![]()
+
+### Eliminar un item con ID 1 del inventario
+
+![]()
+
+![]()
+
+### Añadir 7 unidades cantidad a un item que ya existe
+
+![]()
+
+![]()
+
+### Se remueven 3 unidades cantidad a un item que ya existe
+
+![]()
+
+![]()
+
+### Se lee la cantidad actualmente en stock de un item especifico
+
+![]()
+
+![]()
+
+### Se leen todas las cantidades de todos los items
+
+![]()
+
+![]()
+
+### Se remueven cantidades de multiples items, en este caso se remueven 2 unidades del item1 y 3 unidades del item2
+
+![]()
+
+![]()
+
+### Se crea un ShopCart con un ID 5
+
+![]()
+
+![]()
+
+### Se elimina un ShopCart ya existente
+
+![]()
+
+![]()
+
+### Se añaden dos unidades del item2 al ShopCart 5
+
+![]()
+
+![]()
+
+### Se remueve una unidad del item2 del ShopCart 5
+
+![]()
+
+![]()
+
+### Se consultan los contenidos de un ShopCart
+
+![]()
+
+![]()
+
+### Se crea una dirección de envio nueva con AddressId 1
+
+![]()
+
+![]()
+
+### Se elimina una dirección de envio con AddressId 1
+
+![]()
+
+![]()
+
+### Se hace Checkout, enviando los contenidos del Cart5 a la direccion Address1 y en el proceso removiendo del Inventory los contenidos de Cart5
+
+![]()
+
+![]()
