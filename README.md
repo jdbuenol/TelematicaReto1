@@ -131,90 +131,90 @@ El ApiGW consiste de 15 endpoints. en esta guia se pusieron a correr los tres mi
 
 ### Crear un item en el inventario con ID 1 (los items se crean con cantidad 0)
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request1-1.png)
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request1-2.png)
 
 ### Eliminar un item con ID 1 del inventario
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request2-1.png)
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request2-2.png)
 
 ### Añadir 7 unidades cantidad a un item que ya existe
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request3-1.png)
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request3-2.png)
 
 ### Se remueven 3 unidades cantidad a un item que ya existe
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request4-1.png)
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request4-2.png)
 
 ### Se lee la cantidad actualmente en stock de un item especifico
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request5-1.png)
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request5-2.png)
 
 ### Se leen todas las cantidades de todos los items
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request6-1.png)
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request6-2.png)
 
 ### Se remueven cantidades de multiples items, en este caso se remueven 2 unidades del item1 y 3 unidades del item2
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request7-1.png)
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request7-2.png)
 
 ### Se crea un ShopCart con un ID 5
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request8-1.png)
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request8-2.png)
 
 ### Se elimina un ShopCart ya existente
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request9-1.png)
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request9-2.png)
 
 ### Se añaden dos unidades del item2 al ShopCart 5
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request10-1.png)
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request10-2.png)
 
 ### Se remueve una unidad del item2 del ShopCart 5
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request11-1.png)
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request11-2.png)
 
 ### Se consultan los contenidos de un ShopCart
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request12-1.png)
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request12-2.png)
 
 ### Se crea una dirección de envio nueva con AddressId 1
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request13-1.png)
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request13-2.png)
 
 ### Se elimina una dirección de envio con AddressId 1
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request14-1.png)
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request14-2.png)
 
 ### Se hace Checkout, enviando los contenidos del Cart5 a la direccion Address1 y en el proceso removiendo del Inventory los contenidos de Cart5
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request15-1.png)
 
-![]()
+![](https://raw.githubusercontent.com/jdbuenol/TelematicaReto1/main/imgs/request15-2.png)
